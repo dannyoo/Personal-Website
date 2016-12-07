@@ -2,3 +2,4 @@ images/*.jpg
 .DS_Store
 README.md
 images/*.png
+svg/*.svg

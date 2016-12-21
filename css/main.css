@@ -124,12 +124,19 @@ a:hover {
     justify-content: center;
     padding: .5em;
     border: 2px solid #000;
-    transition: background .5s;
     line-height: 2.2em;
     border-radius: 6.1px;
     margin-right: 5%;
     overflow: hidden;
     background: none;
+    z-index: 7;
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+.bp-nav__item:hover{
+    color: #fff;
+    text-shadow: #000 0px 0 3px;
 }
 
 .bp-nav__item > span {
@@ -147,35 +154,15 @@ a:hover {
     height: 400px;
 	width: 400px;
 	pointer-events: none;
-    background: url(../svg/new_stop.svg) 30px -160px no-repeat;
-    -webkit-transform: rotateZ(60deg) translate(-5em, 7.5em); transform: rotateZ(60deg) translate(-5em, 7.5em);
-    transition: all 5s ease;
+    background: url(../svg/new_stop.svg) 0px 0px no-repeat;
+    transform: translate(15em, 7.5em);
+    transition: all .2s ease;
+    z-index: -1;
 }
 
 .bp-nav__item:hover:before, .bp-nav__item:focus:before {
-  animation: sheen 5s forwards;
-    transform: rotateZ(60deg) translate(1em, -9em);
+    transform: translate(2em, -11em);
 }
-
-@-webkit-keyframes sheen {
-  100% {
-    -webkit-transform: rotateZ(60deg) translate(1em, -9em);
-    transform: rotateZ(60deg) translate(1em, -9em);
-  }
-}
-@keyframes sheen {
-  100% {
-    -webkit-transform: rotateZ(60deg) translate(1em, -9em);
-    transform: rotateZ(60deg) translate(1em, -9em);
-  }
-}
-
-/*
-.bp-nav__item:hover {
-    background: url(../svg/new_stop.svg) center center no-repeat;
-    background-size: 400px;
-}
-*/
 
 .bp-icon:after {
 	font-family: 'FontAwesome';

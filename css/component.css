@@ -339,6 +339,9 @@ pages-nav__item--small{
         margin-top: 2.5em;
         max-width: 30%;
     }
+    .bp-nav__item:first-child:hover:before, .bp-nav__item:first-child:focus:before {
+       transform: translate(.9em, -10em)
+    }
 }
 
 @media screen and (max-width: 40em) {
@@ -396,4 +399,5 @@ pages-nav__item--small{
     .bp-nav__item:first-child {
         max-width: 50%;
     }
+
 }

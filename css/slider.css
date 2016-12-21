@@ -39,6 +39,7 @@ body {
 	visibility: hidden;
 	width: 100%;
 	opacity: 0;
+    padding-top: 5em;
 }
 
 .slide--current {
@@ -94,7 +95,7 @@ body {
 }
 
 .button:hover {
-	color: #fff;
+	color: inherit;
 }
 
 .text-hidden {
@@ -424,4 +425,15 @@ body {
     top: 50px;
     right: 12.5px;
 }
+}
+
+/*Zoomer Custon SVG Frames*/
+.zoomer__image[alt=iPhone]{
+    width: 128px;
+}
+.zoomer__image[alt=iPad]{
+    width: inherit;
+}
+.zoomer__image[alt=MacBook]{
+    width: inherit;
 }

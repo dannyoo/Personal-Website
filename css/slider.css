@@ -427,13 +427,25 @@ body {
 }
 }
 
-/*Zoomer Custon SVG Frames*/
+/*Zoomer Custom SVG Frames*/
 .zoomer__image[alt=iPhone]{
     width: 128px;
 }
 .zoomer__image[alt=iPad]{
-    width: inherit;
+    width: 176px;
 }
 .zoomer__image[alt=MacBook]{
-    width: inherit;
+    width: 410px;
 }
+
+/*Zoomer Custom Preview Images*/
+
+/*Size*/
+.zoomer__image[alt=MacBook] ~ .preview img{
+    width: 310px;
+}
+/*Position*/
+.zoomer__image[alt=MacBook] ~ .preview {
+    top: 48.19%;
+}
+

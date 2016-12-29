@@ -46,7 +46,10 @@
 		// the menu nav items
 		navItems = [].slice.call(nav.querySelectorAll('.link--page')),
 		// check if menu is open
-		isMenuOpen = false;
+		isMenuOpen = false,
+        // Call To Action buttons
+        ctaBtn1 = document.querySelector('a.bp-nav__item:first-child'),
+        ctaBtn2 = document.querySelector('a.bp-nav__item:last-child');
 
 	function init() {
 		buildStack();
@@ -116,6 +119,21 @@
 			});
 		});
 
+        //i'll find a better way to do this one day
+        ctaBtn1.addEventListener('click', function(ev) {
+            var pageid = ctaBtn1.getAttribute('href').slice(1);
+            ev.preventDefault();
+            openMenu();
+            openPage(pageid);
+        });
+
+        ctaBtn2.addEventListener('click', function(ev) {
+            var pageid = ctaBtn2.getAttribute('href').slice(1);
+            ev.preventDefault();
+            openMenu();
+            openPage(pageid);
+        });
+
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
 			if( !isMenuOpen ) return; 
@@ -183,7 +201,7 @@
 		if( id ) {
 			current = futureCurrent;
 		}
-		
+
 		// close menu..
 		classie.remove(menuCtrl, 'menu-button--open');
 		classie.remove(nav, 'pages-nav--open');

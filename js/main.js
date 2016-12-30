@@ -49,7 +49,8 @@
 		isMenuOpen = false,
         // Call To Action buttons
         ctaBtn1 = document.querySelector('a.bp-nav__item:first-child'),
-        ctaBtn2 = document.querySelector('a.bp-nav__item:last-child');
+        ctaBtn2 = document.querySelector('a.bp-nav__item:last-child'),
+        ctaBtn3 = document.querySelector('a.bp-nav__item:only-child');
 
 	function init() {
 		buildStack();
@@ -134,6 +135,13 @@
             openPage(pageid);
         });
 
+        ctaBtn3.addEventListener('click', function(ev) {
+            var pageid = ctaBtn3.getAttribute('href').slice(1);
+            ev.preventDefault();
+            openMenu();
+            openPage(pageid);
+        });
+        
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
 			if( !isMenuOpen ) return; 

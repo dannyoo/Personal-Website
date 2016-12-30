@@ -9,6 +9,7 @@
 	<meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
 	<meta name="keywords" content="church, communications, consulting, design, photography, web design, web dev, developer, ministry" />
 	<meta name="author" content="Daniel Jimenez" />
+	<meta name="theme-color" content="#000">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/feather_font.css">
@@ -167,14 +168,6 @@
 			<img class="poster" src="images/4.jpg" alt="img04" />
 		</div>
 		<div class="page" id="page-what">
-<!--			<header class="bp-header cf">-->
-<!--				<h1 class="bp-header__title">Manuals</h1>-->
-<!--				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>-->
-<!--				<p class="info">-->
-<!--					"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore-->
-<!--				</p>-->
-<!--			</header>-->
-<!--			<img class="poster" src="images/2.jpg" alt="img02" />-->
     <header class="bp-header cf">
         <div class="container flex-container top">
                <div class="fifty">
@@ -183,6 +176,22 @@
                         <br><br>
                         My quest and passion to be a high <i>value</i> standard in tech and communication for non-profits began.
                     </p>
+
+                    <div class="mobile_skills container flex-container fifty">
+                   <div class="skill">
+                       <img src="svg/icon_web.svg" alt="Web Page" ondragstart="return false;">
+                       <h2 class="p">WEB</h2>
+                   </div>
+                   <div class="skill">
+                       <img src="svg/icon_brand.svg" alt="Sketching A Fingerprint" ondragstart="return false;">
+                       <h2 class="p">BRAND</h2>
+                   </div>
+                   <div class="skill">
+                       <img src="svg/icon_strategy.svg" alt="Roadmap" ondragstart="return false;">
+                       <h2 class="p">STRATEGY</h2>
+                   </div>
+               </div>
+
                    <p class="info p">
                 Unfortunately, many amazing non-profits poorly communicated their message through both digital and physical mediums. This hurts every person which the non-profit could <i>potentially</i> reached...
                     </p>
@@ -193,18 +202,25 @@
                       Not only can good communication change your local community, but also it can change your <i>world</i>.
                   </p>
                    <p class="info p">I am a passionate student who is ready to learn, to work hard, and to make good become better.</p>
+
+                   <nav class="mobile_skills bp-nav">
+					    <a class="bp-nav__item bp-icon bp-icon--2" href="#page-contact" data-info="with a purpose driven passion.">Let's Work Together<span>with a purpose driven passion.</span></a>
+				    </nav>
+
                 </div>
-               <div class="container flex-container fifty">
+               <div id="desktop_skills" class="container flex-container fifty">
                    <div class="skill">
-                       <img src="svg/icon_web.svg" alt="Web Page">
+                       <img src="svg/icon_web.svg" alt="Web Page" ondragstart="return false;">
                        <h2 class="p">WEB</h2>
                    </div>
                    <div class="skill">
-                       <img src="svg/icon_brand.svg" alt="Sketching A Fingerprint">
+                       <img src="svg/icon_brand.svg" alt="Sketching A Fingerprint" ondragstart="return false;">
                        <h2 class="p">BRAND</h2>
                    </div>
-                   <div class="skill">
-                       <img src="svg/icon_strategy.svg" alt="Roadmap">
+                   <div class="skill break">
+                      <div>
+                       <img src="svg/icon_strategy.svg" alt="Roadmap" ondragstart="return false;">
+                       </div>
                        <h2 class="p">STRATEGY</h2>
                    </div>
 

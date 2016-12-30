@@ -50,7 +50,8 @@
         // Call To Action buttons
         ctaBtn1 = document.querySelector('a.bp-nav__item:first-child'),
         ctaBtn2 = document.querySelector('a.bp-nav__item:last-child'),
-        ctaBtn3 = document.querySelector('a.bp-nav__item:only-child');
+        ctaBtn3 = document.querySelector('a.bp-nav__item:only-child'),
+        ctaBtn4 = document.querySelector('#desktop_skills a.bp-nav__item:only-child');
 
 	function init() {
 		buildStack();
@@ -142,6 +143,14 @@
             openPage(pageid);
         });
         
+        ctaBtn4.addEventListener('click', function(ev) {
+            var pageid = ctaBtn4.getAttribute('href').slice(1);
+            ev.preventDefault();
+            openMenu();
+            openPage(pageid);
+        });
+         //i'll find a better way to do this one day
+
 		// keyboard navigation events
 		document.addEventListener( 'keydown', function( ev ) {
 			if( !isMenuOpen ) return; 

@@ -397,5 +397,80 @@ pages-nav__item--small{
     .bp-nav__item:first-child {
         max-width: 50%;
     }
+    #page-what{
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
 
+}
+
+@media screen and (max-width: 76.250em) {
+    #desktop_skills{
+        display: none;
+    }
+    .container{
+        height: auto;
+    }
+    .fifty{
+        width: inherit;
+    }
+    .fifty .info {
+        max-width: none;
+    }
+    .info {
+        margin-top: .5em;
+        font-size: 1.1em;
+    }
+    .container .container {
+        height: auto;
+        width: auto;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .skill {
+        padding: 2% 5% 0;
+    }
+    .skill img {
+        height: 5em
+    }
+    h2.p{
+        font-size: large;
+    }
+    .container.container + p{
+        margin-top: 0%;
+    }
+    .mobile_skills.bp-nav {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 76.250em) {
+    .mobile_skills{
+        display: none;
+    }
+    .break{
+        width: 100%;
+    }
+    .break div {
+        margin: 0 auto;
+        width: 149.328px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .mobile_skills.bp-nav {
+        margin: 0;
+    }
+    .mobile_skills .bp-nav__item {
+        margin:0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h2.p{
+        margin-top: .5em;
+    }
+    .skill img {
+        height: 3.5em;
+    }
 }

@@ -88,13 +88,13 @@ p:first-child i:nth-child(1)::before{
 p:first-child i:last-child::before{
     background: linear-gradient(to right, #FF8D47,#FFDA2E)
 }
-p:nth-child(2) i::before{
+p:nth-child(3) i::before{
     background: linear-gradient(to right, #A133D5,#D73F59)
 }
-p:nth-child(3) i::before{
+p:nth-child(4) i::before{
     background: linear-gradient(to right, #CA3058,#FF9948)
 }
-p:nth-child(4) i::before{
+p:nth-child(5) i::before{
     background: linear-gradient(to right, #FFD92D,#2BD663)
 }
 

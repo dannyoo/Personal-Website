@@ -182,9 +182,10 @@ html.js,
 .poster {
 	position: absolute;
 	bottom: 4vh;
-	left: 60%;
+	left: 70%;
 	max-width: 100%;
 	max-height: 80%;
+    width: 30%;
 }
 
 /* Menu button */
@@ -284,13 +285,13 @@ pages-nav__item--small{
 		max-width: 100%;
 	}
 	.poster {
-		position: relative;
-		top: auto;
-		left: auto;
-		display: block;
+		position: initial;
 		max-width: 100%;
 		max-height: 50vh;
-		margin: 0 0 0 50%;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
 	}
 	.pages-nav__item {
 		width: 50%;
@@ -304,15 +305,7 @@ pages-nav__item--small{
 	.link--social {
 		margin: 0 0.1em;
 	}
-    .bp-header__desc{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90vw;
-        text-align: center;
-    }
+
     .bp-header__present{
         display:flex;
         justify-content:center;
@@ -368,9 +361,6 @@ pages-nav__item--small{
 	.info {
 		font-size: 0.85em;
 	}
-	.poster {
-		margin: 1em;
-	}
     #inline-words-container{
         flex-direction:column;
     }
@@ -382,9 +372,6 @@ pages-nav__item--small{
     }
     .bp-header {
 		padding: 50px 20px 1em;
-	}
-	.bp-header__title {
-		font-size: 1.8em;
 	}
     .upside-down-svg {
         left: 0px;

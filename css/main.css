@@ -78,6 +78,7 @@ h2.p {
     width: 100%;
     height: 30%;
     z-index: -1;
+    transition: .2s ease;
 }
 
 /*Children of Itallic Effect*/
@@ -88,6 +89,9 @@ p:first-child i:nth-child(1)::before{
 p:first-child i:last-child::before{
     background: linear-gradient(to right, #FF8D47,#FFDA2E)
 }
+p:nth-child(2) i::before{
+    background: linear-gradient(to right, #FFD92D,#2BD663)
+}
 p:nth-child(3) i::before{
     background: linear-gradient(to right, #A133D5,#D73F59)
 }
@@ -96,6 +100,18 @@ p:nth-child(4) i::before{
 }
 p:nth-child(5) i::before{
     background: linear-gradient(to right, #FFD92D,#2BD663)
+}
+
+/* Links */
+
+#page-contact .p i:hover::before, #page-contact .p i:focus::before{
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: -3px;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
 }
 
 /* Blueprint header */
